@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./custom.css">
+    <title>Advance</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="flex justify-around">
+        <div class="w-10/12 max-w-6xl flex justify-between pt-3 pb-1 absolute">
+            <!-- logo -->
+            <div class="">
+                <img src="./Assets/logo.svg" alt="logo" class="w-44">
+            </div>
+            <!-- mobi navbar toggle -->
+            <div class="w-6 flex justify-around items-center  lg:hidden" id="moviNavOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#e2e8f0" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
+            </div>
+            <!-- mobinavbar -->
+            <div class="absolute z-10 w-full sm:w-10/12 md:w-9/12 rounded-lg hidden  bg-white right-0 shadow shadow-lg loadAnimation" open id="mobiNavbar">
+                <!-- mobinavclose -->
+                <div class="w-6 flex justify-around items-center absolute top-2 right-0 -translate-x-2 hidden" id="moviNavClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path fill="#475569" fill-rule="evenodd" d="M17.925.747l2.828 2.828L13.328 11l7.425 7.425-2.828 2.828-7.425-7.425-7.425 7.425-2.828-2.828L7.671 11 .247 3.575 3.075.747 10.5 8.171 17.925.747z"/></svg>
+                </div>
+                <!-- product menu -->
+                <div class=" mt-6  rounded-lg flex flex-row justify-around p-3 transition-all" >
+                    <!-- subsection-1 -->
+                    <div class="w-5/12 flex flex-col space-y-3">
+                        <h2 class="text-gray-500 text-xl">Product</h2>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Payments</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Elements </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Payment Links </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold  peer">Check Out </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                    </div>
+                    <!-- subsection-2 -->
+                    <div class="w-5/12 flex flex-col space-y-3  pl-2">
+                        <h2 class="text-gray-500 text-xl h-6"></h2>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Data Pipeline</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Sigma </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Atlas</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Radar </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- solution menu -->
+                <div class="mt-6 rounded-lg flex flex-row justify-around p-3 transition-all" >
+                    <!-- subsection-1 -->
+            
+                <div class="w-5/12 flex flex-col space-y-3">
+                <h2 class="text-md text-slate-500 font-semibold">Use Cases</h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">E-commerce</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">SaaS </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Marketplace </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold  peer">Embedded Finance </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+            </div>
+            <!-- subsection-2 -->
+            <div class="w-5/12 flex flex-col space-y-3 pl-2">
+                <h2 class="h-5"></h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Platform</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Creator economy </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Crypto</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Global Connections </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+            </div>
+            
+                </div>
+                <!-- Develpoer -->
+                <div class="mt-6 rounded-lg grid gap-2 gapx-0 justify-around p-3 transition-all" >
+                    <!-- subsection-1 -->
+                    <div class="row-start-1 row-end-1 col-start-1 col-end-3 grid border-b-2">
+                        <a href="#" class="font-semibold hover:font-bold peer">Documentation <br><span class="text-slate-500">Start integrating Stripe's products and tool</span></a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1">
+                    </div>
+                    <div class=" flex flex-col space-y-3 row-start-2 row-end-2 col-start-1 col-end-2 mt-6">
+                    <h2 class="text-md text-slate-500 font-semibold">Get Started</h2>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Prebuilt Checkouts</a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold peer">Libraries and SDKs </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold  peer">Plugins </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-md flex floatBoxes-Sublinks hover:font-semibold  peer">Code Samples </a>
+                        </div>
+                    </div>
+                    <!-- subsection-2 -->
+                    <div class=" flex flex-col space-y-3  pl-2 mt-6 row-start-2 row-end-2 col-start-2 col-end-3">
+                        <h2 class="text-md text-slate-500 font-semibold">Guides</h2>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Accept Online Payments </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Manage Subscriptions </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Send Payments</a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Set up in-person Payments </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Resources -->
+                <div class="mt-6 rounded-lg flex flex-row justify-around p-3 transition-all" >
+                    <!-- subsection-1 -->
+                    <div class="w-5/12 flex flex-col space-y-3 ">
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Support Center</a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Support Plans </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Guides</a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold  peer">Customers Stories</a>
+                        </div>
+                    </div>
+                    <!-- subsection-2 -->
+                    <div class="w-5/12 flex flex-col space-y-3 pl-2">
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Blog</a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Annual Conference </a>
+                        </div>
+                        <div class="w-full grid items-center">
+                            <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-md flex floatBoxes-Sublinks hover:font-semibold peer">Contact Sales</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- navigation links -->
+            <div class="lg:flex justify-between w-1/2 items-center hidden">
+                <div>
+                    <a href="#" class="navLinks font-bold text-black text-lg hover:opacity-50 peer" id="navLinkProducts">Products</a>
+                    <!-- product floating box -->
+                        <div class=" absolute hidden peer-hover:block mt-14" id="product-Floatbox">
+                            
+                            <!-- content -->
+                            <div class="loadAnimation shadow shadow-lg absolute -mt-14 translate-y-4 z-10 floatBoxes width-500px  bg-white rounded-lg flex flex-row justify-between p-3 transition-all" >
+                                <!-- subsection-1 -->
+                                <div class="w-1/2 flex flex-col space-y-3">
+                                    <h2 class="text-gray-500 text-xl">Payments</h2>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Payments</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Online Payments</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Elements </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Customisable payment UIs</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Payment Links </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">No code payment links</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Check Out </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Pre Built Checkout pages</p>
+                                    </div>
+                                </div>
+                                <!-- subsection-2 -->
+                                <div class="w-1/2 flex flex-col space-y-3 border-l-4 pl-2">
+                                    <h2 class="text-gray-500 text-xl">Business Operations</h2>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Data Pipeline</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Warehouse Data Sync</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Sigma </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Custom Report</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Atlas</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Startup Incorporation</p>
+                                    </div>
+                                    <div class="w-full grid items-center">
+                                        <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Radar </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                                        <p class="text-gray-500 floatBoxes-Sublinks">Fraud and Risk management</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <a href="#" class="navLinks font-bold text-black text-lg hover:opacity-50 peer" id="serviceLinkProducts">Solutions</a>
+                    <!-- services floating box -->
+                    <div class="absolute hidden peer-hover:block -mt-10" id="service-Floatbox">
+        
+                    <!-- content -->
+                <div class="loadAnimation shadow shadow-lg absolute mt-10 translate-y-4 -left-20 -translate-x-10 z-10 floatBoxes width-600px  bg-white rounded-lg flex flex-row justify-between p-3 transition-all" >
+                    <!-- subsection-1 -->
+            
+                <div class="w-1/2 flex flex-col space-y-3">
+                <h2 class="text-md text-slate-500 font-semibold">Use Cases</h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">E-commerce</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">SaaS </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Marketplace </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Embedded Finance </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+            </div>
+            <!-- subsection-2 -->
+            <div class="w-1/2 flex flex-col space-y-3 pl-2">
+                <h2 class="h-5"></h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Platform</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1 linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Creator economy </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Crypto</a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Global Connections </a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1  linkArrow">
+                </div>
+            </div>
+            
+        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="navLinks font-bold text-black text-lg hover:opacity-50 peer" id="developerLinkProducts">Developer</a>
+                    <!-- developer floatbox -->
+                    <div class="absolute  mt-6 hidden peer-hover:block " id="developer-Floatbox">
+        
+        <!-- content -->
+        <div class="loadAnimation shadow shadow-lg absolute -mt-6 translate-y-4 -translate-x-60 z-10 floatBoxes width-600px  bg-white rounded-lg grid gap-2 gapx-0 justify-around p-3 transition-all" >
+            <!-- subsection-1 -->
+            <div class="row-start-1 row-end-1 col-start-1 col-end-3 grid border-b-2">
+                <a href="#" class="font-semibold hover:font-bold peer">Documentation <br><span class="text-slate-500">Start integrating Stripe's products and tool</span></a><img src="./Assets/icons8-arrow-30.png" alt="Go Ahead" class="row-start-1 row-end-1 col-start-2 col-end-3 invisible peer-hover:visible w-4 ml-1">
+            </div>
+            <div class=" flex flex-col space-y-3 row-start-2 row-end-2 col-start-1 col-end-2 mt-6">
+            <h2 class="text-md text-slate-500 font-semibold">Get Started</h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Prebuilt Checkouts</a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Libraries and SDKs </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Plugins </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Code Samples </a>
+                </div>
+            </div>
+            <!-- subsection-2 -->
+            <div class=" flex flex-col space-y-3  pl-2 mt-6 row-start-2 row-end-2 col-start-2 col-end-3">
+                <h2 class="text-md text-slate-500 font-semibold">Guides</h2>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Accept Online Payments </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Manage Subscriptions </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Send Payments</a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-black text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Set up in-person Payments </a>
+                </div>
+            </div>
+            
+        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="navLinks font-bold text-black text-lg hover:opacity-50 peer" id="resourcesLinkProducts">Resources</a>
+                    <!-- resources floatbox -->
+                    <div class="absolute hidden peer-hover:block  mt-6" id="resources-Floatbox">
+         
+        <!-- content -->
+        <div class="loadAnimation absolute shadow shadow-lg -mt-6 translate-y-4  -translate-x-80 z-10 floatBoxes width-500px  bg-white rounded-lg flex flex-row justify-between p-3 transition-all" >
+            <!-- subsection-1 -->
+            <div class="w-1/2 flex flex-col space-y-3 ">
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Support Center</a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Support Plans </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Guides</a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold  peer">Customers Stories</a>
+                </div>
+            </div>
+            <!-- subsection-2 -->
+            <div class="w-1/2 flex flex-col space-y-3 pl-2">
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2  text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Blog</a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Annual Conference </a>
+                </div>
+                <div class="w-full grid items-center">
+                    <a href="#" class="row-start-1 row-end-1  col-start-1 col-end-2 text-slate-700 text-lg flex floatBoxes-Sublinks hover:font-semibold peer">Contact Sales</a>
+                </div>
+                
+            </div>
+            
+        </div>
+                    </div>
+                </div>
+                <a href="#" class="navLinks font-bold text-black text-lg hover:opacity-50">Pricing</a>
+            </div>
+            <!-- sign in button -->
+            <div class="lg:flex justify-between  hidden rounded-full bg-slate-100 hover:bg-opacity-50 px-2 py-2">
+                <a href="#" class=" peer"><button class=" text-slate-800 font-bold">Sign in</button></a><img src="./Assets/icons8-arrow-30.png" alt="" class="w-4 hidden peer-hover:flex">
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div>
+        <!-- backvideo -->
+        <div class="">
+            <video autoplay muted loop plays-reverse class="mt-0 video absolute -z-10">
+                <source src="./Assets/Hero-bg.mp4">
+            </video>
+            <div class="flex flex-col md:flex-row max-w-6xl">
+                <div class="absolute mt-28 sm:mt-24  lg:mt-64 max-w-xl left-1/2 -translate-x-1/2 md:left-6 md:-translate-x-0 md:w-6/12  lg:ml-28 flex flex-col space-y-3">
+                    <h1 class="text-5xl font-semibold text-center sm:text-6xl text-white md:mt-6  lg:text-8xl lg:font-bold lg:text-slate-900">HomeSmart</h1>
+                    <h1 class="text-2xl font-semibold pt-6 sm:text-white text-center text-black lg:text-6xl lg:font-bold lg:text-slate-900">Never Stop Learning</h1>
+                    <p class=" text-lg font-semibold pt-10  text-justify mx-auto sm:text-white sm:pt-2 lg:text-lg lg:font-semibold lg:text-slate-800">Millions of businesses of all sizes—from startups to large enterprises—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
+                    <div class="flex flex-row justify-around">
+                        <div class="flex flex-row  bg-indigo-500 rounded-full px-3 py-2">
+                            <a href="#" class=" peer"><button class=" text-white   font-semibold">Get Started</button></a><img src="./Assets/icons8-arrow-30.png" alt="" class="w-4 hidden peer-hover:flex">
+
+                        </div>                    
+                        <div class="flex flex-row  bg-indigo-500 rounded-full px-3 py-2">
+                            <a href="#" class=" peer"><button class=" text-white   font-semibold">Contact Sales</button></a><img src="./Assets/icons8-arrow-30.png" alt="" class="w-4 hidden peer-hover:flex">
+
+                        </div>                    
+                    </div>
+                </div>
+                <!-- app -->
+                <div class="w-48 mt-96 pt-32 sm:mt-80 mx-auto md:mt-6 md:pt-8 md:mr-10 md:w-56 lg:pt-24 lg:mt-10">
+                    <img src="/Assets/app.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- content -->
+        
+        
+    </div>
+    <!-- form -->
+    <div class="container w-full bg-slate-200 mt-14 pt-6 rounded-lg mx-auto lg:mt-72">
+        <div class="w-72 bg-indigo-400 rounded-lg p-3 mx-auto">
+            <form action="https://formsubmit.co/el/cukige" method="post">
+                <h2 class="text-2xl font-semibold text-white text-center">Contact Us</h2>
+                <div class="flex flex-col-reverse mt-6 ">
+                    <input type="text" id='name' class="rounded-md border-4 border-indigo-500 peer bg-indigo-100 font-semibold text-indigo-700 px-3" placeholder="Enter your name">
+                    <label for="name" class="text-white font-semibold absolute -translate-y-8 transition-all peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:-z-10" name="name">Enter Your Name</label>
+                </div>
+                <div class="flex flex-col-reverse mt-8 ">
+                    <input type="email" id="email" class="rounded-md border-4 border-indigo-500 peer bg-indigo-100 font-semibold text-indigo-700 px-3" placeholder="Your Email">
+                    <label for="name" class="text-white font-semibold absolute -translate-y-8 transition-all peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:-z-10" name="email">Enter Your Email</label>
+                </div>
+                <div class="flex flex-col-reverse mt-8 ">
+                    <textarea name="" id="message" cols="28" rows="5" class="rounded-md border-4 border-indigo-500 peer bg-indigo-100 font-semibold text-indigo-700 px-3" placeholder="How can we help you?" name="message"></textarea>
+                    <label for="message" class="text-white font-semibold absolute -translate-y-32 transition-all peer-placeholder-shown:-translate-y-24 peer-placeholder-shown:-z-10">How can we help you?</label>
+                </div>
+                <button type="submit" class="rounded-full px-3 py-2 bg-indigo-700 text-white font-semibold hover:shadow-lg hover:shadow-indigo-100/90 mt-6" value="Send Email">Connect</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+html{
+    scroll-behavior: smooth;
+}
+.width-500px{
+    width: 500px;
+}
+.width-600px{
+    width: 600px;
+}
+
+.triangle-up {
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(147, 147, 147);
+}
+.heroHeading{
+    fill: aquamarine;
+    stroke-width: 4px;
+    stroke: #e2e8f0;
+}
+#mobiNavbar {
+    overflow: auto;
+    height:80vh
+}
+#mobiNavbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #e2e8f0;
+    background-color: transparent;
+}
+
+#mobiNavbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+#mobiNavbar::-webkit-scrollbar-thumb {
+    background-color: #e2e8f0;
+}
+#mobiNavbar{
+    scroll-behavior: smooth;
+}
+.video{
+    clip-path: polygon(0 0, 100% 0%, 100% 29%, 0 61%);
+}
+
+.loadAnimation{
+    animation: introload .1s ease-in-out;
+}
+
+@keyframes introload {
+    from {
+        clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+        
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+@media (min-aspect-ratio:16/9){
+    .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media(max-width:1024px){
+    .video{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
